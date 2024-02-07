@@ -20,3 +20,4 @@ pip install -U -r requirements.txt || exit 1
 
 echo "Starting Bot..."
 python3 bot.py
+tr -d '\r' < start.sh > temp_file && mv temp_file start.sh
